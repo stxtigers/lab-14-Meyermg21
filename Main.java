@@ -202,4 +202,21 @@ class Main {
       j++;
     }
   }
+  public static String censor(String s, char c)
+  {
+    //return s.replace(c,'*');
+    String str = "";
+    for(int i = 0; i < s.length(); i++)
+    {
+      if(s.charAt(i) == c)
+      {
+        str = str + "*";
+      }
+      else
+      {
+        str = str + s.charAt(i);
+      }
+    }
+    return str;
+  }
 }
